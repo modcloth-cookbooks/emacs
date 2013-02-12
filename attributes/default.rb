@@ -23,6 +23,8 @@ when "redhat","centos","scientific","fedora","arch"
   default['emacs']['packages'] = ["emacs-nox"]
 when "freebsd"
   default['emacs']['packages'] = ["editors/emacs-nox11"]
+when "smartos"
+  default['emacs']['packages'] = ["emacs-nox11"]  
 else
   default['emacs']['packages'] = ["emacs"]  
 end
